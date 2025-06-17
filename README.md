@@ -11,9 +11,6 @@ The authors are not responsible for any data loss, corruption, or unexpected beh
 It is strongly recommended to test thoroughly in a staging environment before deploying to production.
 
 
-## Installation
-
-Copy the `local_backup_plugin` folder into the `plugins/` directory of your Discourse installation.
 
 ## Usage
 
@@ -21,6 +18,6 @@ To run the local backup:
 
 ```bash
 cd /var/www/discourse
-bundle exec ruby plugins/local_backup_plugin/bin/run_local_backup.rb
+bundle exec ruby script/run_local_backup.rb
 
 
