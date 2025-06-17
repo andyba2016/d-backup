@@ -12,4 +12,5 @@ after_initialize do
   FileUtils.chmod("+x", script_target_path)
   Rails.logger.info "[d-backup] Copied run_local_backup.rb to #{script_target_path}"
 
+  load File.expand_path("../lib/jobs/daily/d_backup_job.rb", __FILE__)
 end

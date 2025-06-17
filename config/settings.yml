@@ -4,3 +4,8 @@ plugins:
     client: true
     type: string
     description: "Destination directory to move the backup to"
+  d_backup_enable_daily_job:
+    default: true
+    client: false
+    type: bool
+    description: "Enable daily backup job"
