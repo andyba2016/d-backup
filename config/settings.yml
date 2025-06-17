@@ -1,6 +1,6 @@
 plugins:
   d-backup:
-    dest_dir:
+    d_backup_dest_dir:
       default: "/var/discourse/custom_backup"
       client: true
       type: string
