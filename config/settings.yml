@@ -18,6 +18,7 @@ plugins:
   d_backup_s3_secret_key:
     default: test
     client: false
+    secret: true
   d_backup_s3_region:
     default: us-east-1
     client: false
