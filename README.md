@@ -10,8 +10,6 @@ The authors are not responsible for any data loss, corruption, or unexpected beh
 
 It is strongly recommended to test thoroughly in a staging environment before deploying to production.
 
-
-
 ## Usage
 
 To run the local backup:

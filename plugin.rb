@@ -7,7 +7,6 @@ after_initialize do
   script_target_path = Rails.root.join("script", "run_local_backup.rb")
   script_source_path = File.expand_path("../templates/run_local_backup.rb", __FILE__)
 
-
   FileUtils.mkdir_p(File.dirname(script_target_path))
   FileUtils.cp(script_source_path, script_target_path)
   FileUtils.chmod("+x", script_target_path)
