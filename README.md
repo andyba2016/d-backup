@@ -18,6 +18,4 @@ To run the local backup:
 
 ```bash
 cd /var/www/discourse
-bundle exec ruby script/run_local_backup.rb
-
-
+RAILS_ENV=production bundle exec ruby script/run_local_backup.rb
