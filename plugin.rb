@@ -7,10 +7,10 @@ after_initialize do
   script_target_path = Rails.root.join("script", "run_local_backup.rb")
   script_source_path = File.expand_path("../templates/run_local_backup.rb", __FILE__)
 
-  unless File.exist?(script_target_path)
-    FileUtils.mkdir_p(File.dirname(script_target_path))
-    FileUtils.cp(script_source_path, script_target_path)
-    FileUtils.chmod("+x", script_target_path)
-    Rails.logger.info "[d-backup] Copied run_local_backup.rb to #{script_target_path}"
-  end
+
+  FileUtils.mkdir_p(File.dirname(script_target_path))
+  FileUtils.cp(script_source_path, script_target_path)
+  FileUtils.chmod("+x", script_target_path)
+  Rails.logger.info "[d-backup] Copied run_local_backup.rb to #{script_target_path}"
+
 end
