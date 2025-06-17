@@ -4,7 +4,7 @@
 # authors: atarrio
 
 after_initialize do
-  script_target_path = Rails.root.join("scripts", "run_local_backup.rb")
+  script_target_path = Rails.root.join("script", "run_local_backup.rb")
   script_source_path = File.expand_path("../templates/run_local_backup.rb", __FILE__)
 
   unless File.exist?(script_target_path)
