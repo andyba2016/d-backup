@@ -5,7 +5,7 @@ module Jobs
     every 10.minutes
 
     def execute(args)
-      return unless SiteSetting.d_backup_enabled
+      return unless SiteSetting.d_backup_enable_daily_job
 
       Rails.logger.info("[DBackupJob] Running external backup script...")
 
