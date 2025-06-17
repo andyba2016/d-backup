@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'fileutils'
-require File.expand_path("../config/environment", __dir__)
+require File.expand_path("../../config/environment", __dir__)
 require_relative "../lib/custom_backup/local_backuper"
 
 # Paths
