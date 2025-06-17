@@ -1,7 +1,6 @@
 plugins:
-  d-backup:
-    d_backup_dest_dir:
-      default: "/var/discourse/custom_backup"
-      client: true
-      type: string
-      description: "Destination directory to move the backup to"
+  d_backup_dest_dir:
+    default: "/var/discourse/custom_backup"
+    client: true
+    type: string
+    description: "Destination directory to move the backup to"
