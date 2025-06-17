@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'fileutils'
-require File.expand_path("../../config/environment", __dir__)
-require_relative "../lib/custom_backup/local_backuper"
+require File.expand_path("../config/environment", __dir__)
+require_relative "../plugins/d-backup/lib/custom_backup/local_backuper"
 
 # Paths
 source_dir = Rails.root.join("public", "backups", "default").to_s
