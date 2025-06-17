@@ -1,4 +1,4 @@
-# name: local-backup-plugin
+# name: d-backup
 # about: Create custom backup file
 # version: 0.1
 # authors: atarrio
