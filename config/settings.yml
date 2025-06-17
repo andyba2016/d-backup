@@ -1,0 +1,5 @@
+plugins:
+  d_backup:
+    custom_backup_dir:
+      default: "custom_backup"
+      client: false

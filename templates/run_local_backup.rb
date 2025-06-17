@@ -6,7 +6,9 @@ require_relative "../plugins/d-backup/lib/custom_backup/local_backuper"
 
 # Paths
 source_dir = Rails.root.join("public", "backups", "default").to_s
-dest_dir   = Rails.root.join("custom_backup").to_s
+
+plugin_setting = SiteSetting.custom_backup_dir
+dest_dir = Rails.root.join(plugin_setting).to_s
 
 # Create destination directory if it doesn't exist
 FileUtils.mkdir_p(dest_dir)
